@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root{
+    --font: "kanit", sans-serif;
+    --border-radius: 10px;
+    --cor-btn: hsl(352, 78%, 60%);
+    --cor-btn-hover: hsl(352, 74%, 37%);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font);
+    background: #f1f5f8;
+    color: black;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--font);
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1;
+    }
+  }
+  main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .container {
+    text-align: center;
+  }
+  nav {
+    background: white;
+    height: 3rem;
+    display: grid;
+    align-items: center;
+    box-shadow: darkslategray;
+  }
+  .nav-center {
+    width: 90vw;
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-center h4 {
+    margin-bottom: 0;
+    color: var(--cor-btn);
+  }
+  .nav-links {
+    display: flex;
+  }
+  nav a {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    color:  var(--cor-btn);
+    letter-spacing: 0.1rem;
+    margin-right: 1rem;
+  }
+  nav a:hover {
+    color:var(--cor-btn-hover);
+  }
+  .container h2{
+    background: black;
+    border-radius: var(--border-radius);
+    color: #f1f5f8;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+
+  }
+  .color{
+    color: var(--cor-btn);
+  }
+  .btn-hero {
+    
+    font-family: var(--font);
+    text-transform: uppercase;
+    background: transparent;
+    color:  var(--cor-btn);
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    border: 2px solid var(--cor-btn);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    
+  }
+  .btn-hero:hover {
+    color: white;
+    background: var(--cor-btn);
+  }
